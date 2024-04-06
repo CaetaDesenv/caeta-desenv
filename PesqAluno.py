@@ -1,0 +1,128 @@
+#Gera informações sobre os alunos
+import streamlit as st
+import pandas as pd
+
+#c:\Users\prcral\AppData\Local\Programs\Python\Python312\python.exe -m streamlit run PesqAluno.py
+
+st.set_page_config(page_title="PPE – Pesquisa de Alunos", layout="wide")
+
+# Carrega o DataFrame a partir do arquivo 'VisaoFull.xlsx'
+@st.cache_data
+
+def load_data():
+    df_alunos = pd.read_csv('DF_ALUNOS.csv')
+    df_familias = pd.read_csv('DF_FAMILIAS.csv')
+    df_dadosbasicos = pd.read_csv('DF_DADOSBASICOS.csv')
+    df_resultados = pd.read_csv('DF_RESULTADOS.csv')
+    df_beneficios = pd.read_csv('DF_BENEFICIOS.csv')
+    
+    return df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios
+
+df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios = load_data()
+
+# Sidebar
+st.sidebar.title("Pesquisar Aluno")
+st.sidebar.write("")
+st.sidebar.text("Última atualização: 04/04/2024")
+st.sidebar.text("")
+#st.sidebar.text("Digite o nome desejado e quando\nencontrado clique no mesmo")
+aluno_filtro  = st.sidebar.selectbox("Digite o nome desejado e quando\nencontrado clique no mesmo", 
+       df_alunos["Aluno"])
+st.sidebar.text("Na tabela ao lado, encontrado\no aluno, digite aqui o código\ndo mesmo e pressione ENTER")
+st.sidebar.text("Dados detalhados do aluno serão\napresentados nas outras abas")
+idt_elegivel  = st.sidebar.number_input('Código do aluno no PPE', min_value=1, value=1)
+
+# Filtrar df_pesquisa pelo aluno selecionado no sidebar
+if aluno_filtro:
+    df_familias = df_familias[df_familias["Aluno"].str.contains(aluno_filtro, case=False)]
+
+#Abas
+tab1,tab2,tab3,tab4 = st.tabs(["Pesquisa","Dados Pessoais","Resultados","Benefícios" ])
+
+with tab1:
+    # Aba "Pesquisa"
+    # Apresentar dataframe na aba Pesquisa
+    st.dataframe(df_familias[["Cod", "Aluno", "Nascimento", "Mae"]].reset_index(drop=True),
+                height=200, use_container_width=True, hide_index=True,
+                column_config={"Cod": st.column_config.NumberColumn(format="%.0f")})
+
+with tab2:
+#Aba "Dados Pessoais"
+#    dados_pessoais = df[df["Cód."] == idt_elegivel].iloc[0]
+    dados_pessoais = df_dadosbasicos[df_dadosbasicos["Cod"] == idt_elegivel].iloc[0]
+
+    st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
+    st.text("Nascimento : " + dados_pessoais["Nascimento"])
+    st.text("Mãe: " + dados_pessoais["Mae"])
+    st.text("Pai: " + dados_pessoais["Pai"])
+
+    if isinstance(dados_pessoais["Email informado"], str) and dados_pessoais["Email informado"].strip():
+        st.write("Email informado: " + dados_pessoais["Email informado"])
+    else:
+        st.write("Email informado: não informado")
+
+    st.write("Email CadUNICO: " + dados_pessoais["Email CadUNICO"])
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.text("Sexo: " + dados_pessoais["Sexo"])
+
+        # Dividir a string pelo ponto
+        partes = str(dados_pessoais["Tel.Informado1"])
+        partes = partes.split(".")
+        primeira_parte = partes[0]
+        #Verificar se primeira_parte é nulo
+        if primeira_parte == 'nan':
+            st.text("Tel.Informado1: Não informado")     
+        else:
+            st.text("Tel.Informado1: " + primeira_parte)
+        
+        # Dividir a string pelo ponto
+        partes = str(dados_pessoais["CPF informado"])
+        partes = partes.split(".")
+        primeira_parte = partes[0]
+        if primeira_parte == 'nan':
+            st.text("CPF Informado: Não informado")     
+        else:
+            st.text("CPF Informado: " + primeira_parte)
+
+        st.text("CEP: " + str(dados_pessoais["CEP"]))
+ 
+with tab3:
+    #Aba Resultados
+    st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
+
+    #Apresentar dataframe que mostre resultados
+    df_results = df_resultados[df_resultados["Cod"] == idt_elegivel][["Ano Letivo", "Serie", 
+                                                   "Andamento adesao", "Situacao", 
+                                                   "Matricula", "Escola"]]
+    df_results.sort_values(by="Ano Letivo", inplace=True)
+    st.dataframe(df_results, use_container_width=True, hide_index=True,
+                 column_config={"Ano Letivo": st.column_config.NumberColumn(format="%.0f")})
+
+with tab4:
+    #Aba Benefícios
+    st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
+
+    #Apresentar dataframe que mostre benefícios
+    df_beneficio = df_beneficios[df_beneficios["Cod"] == idt_elegivel][["Ano Letivo", "Serie", 
+                                                   "Depositado", "Poupanca","Num. PA", "CPF conta", 
+                                                   "Banco", "Agencia", "Conta"]]
+    df_beneficio.sort_values(by="Ano Letivo", inplace=True)
+    st.dataframe(df_beneficio, use_container_width=True, hide_index=True,
+                 column_config={"Ano Letivo": st.column_config.NumberColumn(format="%.0f"),
+                                "Serie": st.column_config.NumberColumn(format="%.0f"),
+                                 "Poupanca": st.column_config.NumberColumn(format="%.0f"),
+                                 "Depositado": st.column_config.NumberColumn(format="%.0f"),
+                                 #"Banco": st.column_config.NumberColumn(format="%.0f"),
+                                 "Agencia": st.column_config.NumberColumn(format="%.0f"),
+                                 #"Conta": st.column_config.NumberColumn(format="%.0f"),
+                                 "CPF conta": st.column_config.NumberColumn(format="%.0f")})
+                                 #"Num. PA": st.column_config.NumberColumn(format="%.0f")})
+
+     
+
+
+
+
+
