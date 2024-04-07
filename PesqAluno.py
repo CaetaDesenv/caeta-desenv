@@ -23,7 +23,9 @@ df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios = load_dat
 # Sidebar
 st.sidebar.title("Pesquisar Aluno")
 st.sidebar.write("")
-st.sidebar.text("Última atualização: 04/04/2024")
+# *************************************************************
+st.sidebar.text("Última atualização: 06/04/2024")
+# *************************************************************
 st.sidebar.text("")
 #st.sidebar.text("Digite o nome desejado e quando\nencontrado clique no mesmo")
 aluno_filtro  = st.sidebar.selectbox("Digite o nome desejado e quando\nencontrado clique no mesmo", 
@@ -48,77 +50,87 @@ with tab1:
 
 with tab2:
 #Aba "Dados Pessoais"
-#    dados_pessoais = df[df["Cód."] == idt_elegivel].iloc[0]
-    dados_pessoais = df_dadosbasicos[df_dadosbasicos["Cod"] == idt_elegivel].iloc[0]
+#Realizar as instuçôes a seguir apenas se idt_elegivel existir em df_dadosbasicos
+    if idt_elegivel in df_dadosbasicos["Cod"].to_list():
+        dados_pessoais = df_dadosbasicos[df_dadosbasicos["Cod"] == idt_elegivel].iloc[0]
 
-    st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
-    st.text("Nascimento : " + dados_pessoais["Nascimento"])
-    st.text("Mãe: " + dados_pessoais["Mae"])
-    st.text("Pai: " + dados_pessoais["Pai"])
+        st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
+        st.text("Nascimento : " + dados_pessoais["Nascimento"])
+        st.text("Mãe: " + dados_pessoais["Mae"])
+        st.text("Pai: " + dados_pessoais["Pai"])
 
-    if isinstance(dados_pessoais["Email informado"], str) and dados_pessoais["Email informado"].strip():
-        st.write("Email informado: " + dados_pessoais["Email informado"])
-    else:
-        st.write("Email informado: não informado")
-
-    st.write("Email CadUNICO: " + dados_pessoais["Email CadUNICO"])
-
-    col1, col2 = st.columns(2)
-    with col1:
-        st.text("Sexo: " + dados_pessoais["Sexo"])
-
-        # Dividir a string pelo ponto
-        partes = str(dados_pessoais["Tel.Informado1"])
-        partes = partes.split(".")
-        primeira_parte = partes[0]
-        #Verificar se primeira_parte é nulo
-        if primeira_parte == 'nan':
-            st.text("Tel.Informado1: Não informado")     
+        if isinstance(dados_pessoais["Email informado"], str) and dados_pessoais["Email informado"].strip():
+            st.write("Email informado: " + dados_pessoais["Email informado"])
         else:
-            st.text("Tel.Informado1: " + primeira_parte)
+            st.write("Email informado: não informado")
+
+        st.write("Email CadUNICO: " + dados_pessoais["Email CadUNICO"])
+
+        col1, col2 = st.columns(2)
+        with col1:
+            st.text("Sexo: " + dados_pessoais["Sexo"])
+
+            # Dividir a string pelo ponto
+            partes = str(dados_pessoais["Tel.Informado1"])
+            partes = partes.split(".")
+            primeira_parte = partes[0]
+            #Verificar se primeira_parte é nulo
+            if primeira_parte == 'nan':
+                st.text("Tel.Informado1: Não informado")     
+            else:
+                st.text("Tel.Informado1: " + primeira_parte)
         
-        # Dividir a string pelo ponto
-        partes = str(dados_pessoais["CPF informado"])
-        partes = partes.split(".")
-        primeira_parte = partes[0]
-        if primeira_parte == 'nan':
-            st.text("CPF Informado: Não informado")     
-        else:
-            st.text("CPF Informado: " + primeira_parte)
+            # Dividir a string pelo ponto
+            partes = str(dados_pessoais["CPF informado"])
+            partes = partes.split(".")
+            primeira_parte = partes[0]
+            if primeira_parte == 'nan':
+                st.text("CPF Informado: Não informado")     
+            else:
+                st.text("CPF Informado: " + primeira_parte)
 
-        st.text("CEP: " + str(dados_pessoais["CEP"]))
- 
+            st.text("Bairro: " + str(dados_pessoais["Bairro"]))
+            st.text("CEP: " + str(dados_pessoais["CEP"]))            
+    else:
+        st.header("Aluno não encontrado")
+
 with tab3:
     #Aba Resultados
-    st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
+    #Realizar as instruçôes a seguir apenas se idt_elegivel existir em df_dadospessoais
+    if idt_elegivel in df_dadosbasicos["Cod"].to_list():
+        st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
 
-    #Apresentar dataframe que mostre resultados
-    df_results = df_resultados[df_resultados["Cod"] == idt_elegivel][["Ano Letivo", "Serie", 
+        #Apresentar dataframe que mostre resultados
+        df_results = df_resultados[df_resultados["Cod"] == idt_elegivel][["Ano Letivo", "Serie", 
                                                    "Andamento adesao", "Situacao", 
                                                    "Matricula", "Escola"]]
-    df_results.sort_values(by="Ano Letivo", inplace=True)
-    st.dataframe(df_results, use_container_width=True, hide_index=True,
+        df_results.sort_values(by="Ano Letivo", inplace=True)
+        st.dataframe(df_results, use_container_width=True, hide_index=True,
                  column_config={"Ano Letivo": st.column_config.NumberColumn(format="%.0f")})
+    else:
+        st.header("Aluno não encontrado")
+
 
 with tab4:
     #Aba Benefícios
-    st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
+    #Realizar as instruçôes a seguir apenas se idt_elegivel existir em df_benefícios
+    if idt_elegivel in df_dadosbasicos["Cod"].to_list():
+        st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
 
-    #Apresentar dataframe que mostre benefícios
-    df_beneficio = df_beneficios[df_beneficios["Cod"] == idt_elegivel][["Ano Letivo", "Serie", 
+        #Apresentar dataframe que mostre benefícios
+        df_beneficio = df_beneficios[df_beneficios["Cod"] == idt_elegivel][["Ano Letivo", "Serie", 
                                                    "Depositado", "Poupanca","Num. PA", "CPF conta", 
                                                    "Banco", "Agencia", "Conta"]]
-    df_beneficio.sort_values(by="Ano Letivo", inplace=True)
-    st.dataframe(df_beneficio, use_container_width=True, hide_index=True,
+        df_beneficio.sort_values(by="Ano Letivo", inplace=True)
+        st.dataframe(df_beneficio, use_container_width=True, hide_index=True,
                  column_config={"Ano Letivo": st.column_config.NumberColumn(format="%.0f"),
                                 "Serie": st.column_config.NumberColumn(format="%.0f"),
                                  "Poupanca": st.column_config.NumberColumn(format="%.0f"),
                                  "Depositado": st.column_config.NumberColumn(format="%.0f"),
-                                 #"Banco": st.column_config.NumberColumn(format="%.0f"),
                                  "Agencia": st.column_config.NumberColumn(format="%.0f"),
-                                 #"Conta": st.column_config.NumberColumn(format="%.0f"),
                                  "CPF conta": st.column_config.NumberColumn(format="%.0f")})
-                                 #"Num. PA": st.column_config.NumberColumn(format="%.0f")})
+    else:
+        st.header("Aluno não encontrado")
 
      
 
