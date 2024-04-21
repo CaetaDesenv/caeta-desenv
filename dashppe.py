@@ -47,7 +47,7 @@ def emissao(ano_base, df_listaalunos, notas):
             # Código para o gráfico tipo torta da distribuição de gênero
             gender_counts = filtro_dfalunos['Sexo'].value_counts()
             # Criar o gráfico de pizza (torta) com Plotly
-            figTS = px.pie(values=gender_counts, names=gender_counts.index, labels=gender_counts.index, 
+            figTS = px.pie(values=gender_counts, names=gender_counts.index, #labels=gender_counts.index, 
                          title='Distribuição por gênero em: '+ str(ano_base))
             # Definir cores para os gêneros
             colors = {'Feminino': 'pink', 'Masculino': 'blue'}
@@ -75,9 +75,9 @@ def emissao(ano_base, df_listaalunos, notas):
 
         with col4:
         # Criar o gráfico de barras
-            fig = px.bar(x=grade_counts.index, y=grade_counts.values, text=grade_counts.values, 
-                         labels={'x':'', 'y':'Nº de alunos'})
-            fig.update_traces(texttemplate='%{text}', textposition='inside')
+            fig = px.bar(x=grade_counts.index, y=grade_counts.values, text=grade_counts.values,
+                         labels={'x': 'Série', 'y': 'Nº de alunos'})
+            #fig.update_traces( textposition='inside', hoverinfo="none", showlegend=False)
             fig.update_layout(title=('NºAlunos por Série em: '+ str(ano_base)), xaxis={'type': 'category'},
                               yaxis_title='Nº de alunos')
             fig.update_layout(bargap=0.25)  # Reduzir a largura da barra para 75% da largura atual
@@ -86,13 +86,11 @@ def emissao(ano_base, df_listaalunos, notas):
         with col5:
             # Código para o gráfico de barras da quantidade de alunos por situação
             situation_counts = filtro_dfalunos['Situacao'].value_counts()
-
             # Definir a ordem desejada para as categorias
             category_order = ['Aprovado', 'Dep.neste ano', 'Dep.outros anos', 'Dep.neste ano e outros', 
                               'Reprovado', 'Transferido', 'Abandonou', 'Faleceu']
-
-            figR = px.bar(x=situation_counts.index, y=situation_counts.values,  
-                        labels={'x':'', 'y':'Nº de alunos'}, category_orders={'x': category_order})
+            figR = px.bar(x=situation_counts.index, y=situation_counts.values,  text=situation_counts.values, 
+                        labels={'x': 'Resultado', 'y': 'Nº de alunos'}, category_orders={'x': category_order})
             figR.update_traces( textposition='inside')
             figR.update_layout(title=('NºAlunos por Resultado em: '+ str(ano_base)), 
                                 xaxis={'type': 'category'},yaxis_title='Nº de alunos')
@@ -106,8 +104,8 @@ def emissao(ano_base, df_listaalunos, notas):
             category_order = ['ELEGIVEL', 'INSCRICAO PARCIAL', 'EMAIL NAO CONFIRMADO', 'PRE-INSCRITO', 
                                 'CONCLUIDA', 'AGUARDANDO DEPOSITO', 'VALOR DEPOSITADO', 
                                 'CC aberta - SEM ADESÃO', 'RECUSA EM PARTICIPAR']
-            figP = px.bar(x=progress_counts.index, y=progress_counts.values,  
-                         labels={'x':'', 'y':'Nº de alunos'}, category_orders={'x': category_order})
+            figP = px.bar(x=progress_counts.index, y=progress_counts.values, text=progress_counts.values, 
+                         labels={'x': 'Adesão', 'y': 'Nº de alunos'}, category_orders={'x': category_order})
             figP.update_traces(textposition='inside')
             figP.update_layout(title=('NºAlunos por Adesão em: '+ str(ano_base)),  
                                 xaxis={'type': 'category'},yaxis_title='Nº de alunos')
