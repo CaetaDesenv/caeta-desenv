@@ -41,7 +41,9 @@ def emissao(ano_base, df_listaalunos, notas):
             st.write(f"Número de Alunos: {num_alunos}")
             st.write(f"Número de Escolas: {num_escolas}")
             st.write(f"NOTAS: {notas}")
-            st.write("FONTE: Base de dados do PPE referência 08abr2024")
+###################################################################################            
+            st.write("FONTE: Base de dados do PPE referência 16mai2024")
+####################################################################################
 
         with col2:
             # Código para o gráfico tipo torta da distribuição de gênero
@@ -62,6 +64,7 @@ def emissao(ano_base, df_listaalunos, notas):
             # Criar o gráfico de pizza (torta) com Plotly
             figTR = px.pie(values=race_counts, names=race_counts.index, labels=race_counts.index, 
                          title='Distribuição por raça em: '+ str(ano_base))
+            
             # Definir cores para raças
             colors = {'Parda': 'brown', 'Branca': 'white','Preta': 'black', 'Amarela': 'yellow',
                       'Indigena': 'red'}

@@ -24,7 +24,7 @@ df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios = load_dat
 st.sidebar.title("Pesquisar Aluno")
 st.sidebar.write("")
 # *************************************************************
-st.sidebar.text("Última atualização: 05/05/2024")
+st.sidebar.text("Última atualização: 16/05/2024")
 # *************************************************************
 st.sidebar.text("")
 #st.sidebar.text("Digite o nome desejado e quando\nencontrado clique no mesmo")
