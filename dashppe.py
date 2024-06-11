@@ -42,7 +42,7 @@ def emissao(ano_base, df_listaalunos, notas):
             st.write(f"Número de Escolas: {num_escolas}")
             st.write(f"NOTAS: {notas}")
 ###################################################################################            
-            st.write("FONTE: Base de dados do PPE referência 16mai2024")
+            st.write("FONTE: Base de dados do PPE referência 10jun2024")
 ####################################################################################
 
         with col2:
@@ -120,7 +120,7 @@ def emissao(ano_base, df_listaalunos, notas):
 df_listaalunos = load_data()
 
 #Abas
-tab2019,tab2020,tab2021,tab2022,tab2023 = st.tabs(["2019","2020","2021","2022","2023"])
+tab2019,tab2020,tab2021,tab2022,tab2023,tab2024 = st.tabs(["2019","2020","2021","2022","2023","2024"])
 
 with tab2019: 
     ano_base = 2019
@@ -147,6 +147,10 @@ with tab2023:
     notas = "Escolas das esferas municipal, federal, estadual e técnica, alunos das séries 6, 7, 8, 9, 1, 2 e 3"
     emissao(ano_base, df_listaalunos, notas)
 
+with tab2024: 
+    ano_base = 2024
+    notas = "Escolas das esferas municipal, federal, estadual e técnica, alunos das séries 6, 7, 8, 9, 1, 2 e 3"
+    emissao(ano_base, df_listaalunos, notas)
    
 
 

@@ -203,7 +203,7 @@ with tab6:
 			   font=dict(color='gray')
 		   )
 
-    st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
 
 
        
