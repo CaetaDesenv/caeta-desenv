@@ -42,7 +42,7 @@ def emissao(ano_base, df_listaalunos, notas):
             st.write(f"Número de Escolas: {num_escolas}")
             st.write(f"NOTAS: {notas}")
 ###################################################################################            
-            st.write("FONTE: Base de dados do PPE referência 10jun2024")
+            st.write("FONTE: Base de dados do PPE referência 23jun2024")
 ####################################################################################
 
         with col2:
