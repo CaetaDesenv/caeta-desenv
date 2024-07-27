@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 
-#C:\Users\prcral\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -m streamlit run C:\Users\prcral\Documents\TESTEPYTHON2\PesqAlunoInc.py
+#c:\Users\prcral\AppData\Local\Programs\Python\Python312\python.exe -m streamlit run PesqAlunoInc.py
 
 st.set_page_config(page_title="PPE – Pesquisa Progressão Inconsistente", layout="wide")
 
@@ -24,7 +24,7 @@ df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios = load_dat
 st.sidebar.title("Pesquisar Progresso Inconsistente")
 st.sidebar.write("")
 # *************************************************************
-st.sidebar.text("Última atualização: 18/07/2024")
+st.sidebar.text("Última atualização: 26/07/2024")
 # *************************************************************
 st.sidebar.text("")
 #st.sidebar.text("Digite o nome desejado e quando\nencontrado clique no mesmo")
@@ -44,15 +44,15 @@ tab1,tab2,tab3,tab4 = st.tabs(["Pesquisa","Dados Pessoais","Resultados","Benefí
 with tab1:
     # Aba "Pesquisa"
     # Apresentar dataframe na aba Pesquisa
-    st.dataframe(df_familias[["Cód.", "Aluno", "Nascimento", "Mae"]].reset_index(drop=True),
+    st.dataframe(df_familias[["Cod", "Aluno", "Nascimento", "Mae"]].reset_index(drop=True),
                 height=200, use_container_width=True, hide_index=True,
-                column_config={"Cód.": st.column_config.NumberColumn(format="%.0f")})
+                column_config={"Cod": st.column_config.NumberColumn(format="%.0f")})
 
 with tab2:
 #Aba "Dados Pessoais"
 #Realizar as instuçôes a seguir apenas se idt_elegivel existir em df_dadosbasicos
-    if idt_elegivel in df_dadosbasicos["Cód."].to_list():
-        dados_pessoais = df_dadosbasicos[df_dadosbasicos["Cód."] == idt_elegivel].iloc[0]
+    if idt_elegivel in df_dadosbasicos["Cod"].to_list():
+        dados_pessoais = df_dadosbasicos[df_dadosbasicos["Cod"] == idt_elegivel].iloc[0]
 
         st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
         st.text("Nascimento : " + dados_pessoais["Nascimento"])
@@ -97,11 +97,11 @@ with tab2:
 with tab3:
     #Aba Resultados
     #Realizar as instruçôes a seguir apenas se idt_elegivel existir em df_dadospessoais
-    if idt_elegivel in df_dadosbasicos["Cód."].to_list():
+    if idt_elegivel in df_dadosbasicos["Cod"].to_list():
         st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
 
         #Apresentar dataframe que mostre resultados
-        df_results = df_resultados[df_resultados["Cód."] == idt_elegivel][["Ano Letivo", "Serie", 
+        df_results = df_resultados[df_resultados["Cod"] == idt_elegivel][["Ano Letivo", "Serie", 
                                                    "Andamento adesao", "Situacao", 
                                                    "Matricula", "Escola"]]
         df_results.sort_values(by="Ano Letivo", inplace=True)
@@ -114,20 +114,20 @@ with tab3:
 with tab4:
     #Aba Benefícios
     #Realizar as instruçôes a seguir apenas se idt_elegivel existir em df_benefícios
-    if idt_elegivel in df_dadosbasicos["Cód."].to_list():
+    if idt_elegivel in df_dadosbasicos["Cod"].to_list():
         st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
 
         #Apresentar dataframe que mostre benefícios
-        df_beneficio = df_beneficios[df_beneficios["Cód."] == idt_elegivel][["Ano Letivo", "Serie", 
+        df_beneficio = df_beneficios[df_beneficios["Cod"] == idt_elegivel][["Ano Letivo", "Serie", 
                                                    "Depositado", "Poupanca","Num. PA", "CPF conta", 
-                                                   "Banco", "Num.Agência", "Conta"]]
+                                                   "Banco", "Agencia", "Conta"]]
         df_beneficio.sort_values(by="Ano Letivo", inplace=True)
         st.dataframe(df_beneficio, use_container_width=True, hide_index=True,
                  column_config={"Ano Letivo": st.column_config.NumberColumn(format="%.0f"),
                                 "Serie": st.column_config.NumberColumn(format="%.0f"),
                                  "Poupanca": st.column_config.NumberColumn(format="%.0f"),
                                  "Depositado": st.column_config.NumberColumn(format="%.0f"),
-                                 "Num.Agência": st.column_config.NumberColumn(format="%.0f"),
+                                 "Agencia": st.column_config.NumberColumn(format="%.0f"),
                                  "CPF conta": st.column_config.NumberColumn(format="%.0f")})
     else:
         st.header("Aluno não encontrado")
