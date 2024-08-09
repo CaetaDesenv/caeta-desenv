@@ -29,6 +29,7 @@ Cód.,Aluno,Nascimento,Mae
 238,ITALO DE AZEVEDO MARTINS                                              ,2002-07-05,LUANA DE AZEVEDO MARTINS                                              
 246,JULIANA DE JESUS ALVES                                                ,2002-08-05,DENISE DA GLORIA DE JESUS                                             
 252,PATRICK SILVA FERREIRA                                                ,2005-02-26,SHELIA DOS SANTOS SILVA                                               
+255,JULYA ROSA DA SILVA                                                   ,2005-07-03,VIVIAN ROSA FERREIRA                                                  
 257,LEONARDO DIOLINDO DE CARVALHO                                         ,2004-10-29,IONE PACHECO DIOLINDO                                                 
 262,ADRIELLE DE SOUZA VIEIRA                                              ,2004-07-24,MARIA APARECIDA MONTEIRO DE SOUZA                                     
 277,LUCAS DA SILVA                                                        ,2004-03-01,LUCIENE PUREZA DA SILVA                                               
@@ -209,7 +210,6 @@ Cód.,Aluno,Nascimento,Mae
 10804,ARTHUR ADRYN DA SILVA MONTEZZANO,2009-01-01,JOZIMARE DA SILVA                                                     
 10805,EDIMAR DOS SANTOS CARVALHO FILHO,2008-01-18,EVA JULIANA SANTOS LEITE                                              
 10830,VICTORIA CATHARINE PEREIRA COELHO,2010-02-11,FABIOLA PEREIRA LOPES                                                 
-10834,ERICK PEDRO SANTOS FONSECA,2006-08-04,PATRICIA DA SILVA SANTOS FONSECA                                      
 10882,HIGOR ALBERT MARTINS DE OLIVEIRA,2008-09-25,MARCELA CRISTINA TRINDADE MARTINS                                     
 10913,CHAIANE CARVALHO DA SILVA,2008-08-20,VALCINEIA CARVALHO                                                    
 10920,DIOGO FERNANDES DOMINGOS,2008-11-18,CARLA APARECIDA FERNANDES                                             
@@ -302,6 +302,7 @@ Cód.,Aluno,Nascimento,Mae
 20114,PATRICIA CARDOSO ALVES DOS SANTOS,2009-02-25,KARINA KARLA CARDOSO ALVES SANTOS
 20130,SARA VITORIA LUCAS DE SOUZA,2007-04-07,ANGELICA LUCAS DE SOUZA
 20142,VITORIA DA CONCEICAO ARAUJO LOPES PEIXOTO,2009-01-09,VALERIA DA CONCEICAO
+20158,VITORIA SATURATO RODRIGUES DA SILVA,2009-01-21,KLEYCE JHANNE SATURATO GOMES DA SILVA
 20212,JORGE DOS SANTOS NETO,2010-03-08,VIVIANE DE OLIVEIRA DOS SANTOS
 20302,YRIS GOMES OLIVEIRA,2008-01-23,DENIZE GOMES DA SILVA
 20415,DAVY MOREIRA CHAGAS,2010-04-07,JACILEA CHAGAS
