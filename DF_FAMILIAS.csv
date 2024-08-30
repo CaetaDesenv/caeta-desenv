@@ -1944,6 +1944,7 @@ Cód.,Aluno,Nascimento,Mae
 3475,KAUA NASCIMENTO COSTA                                                 ,2004-10-12,ANA PAULA JERONIMO DO NASCIMENTO                                      
 3476,VITOR HUGO JOVENCIO DE ARAUJO                                         ,2006-02-20,CLEONICE JOVENCIO GUILHERME                                           
 3477,KAUA RODRIGUES NORATO                                                 ,2005-07-05,CLEONICE MARCIA RODRIGUES                                             
+3478,THAMIRES OLIVEIRA COSTA                                               ,2006-10-11,SONIA APARECIDA DE OLIVEIRA                                           
 3479,KAYLANE DE CARVALHO SOARES                                            ,2006-01-04,NUBIA KATE NASCIMENTO MAIA DE CARVALHO                                
 3480,VITORIA RAISSA DA SILVA FEITOSA                                       ,2006-12-01,TATIANE DA SILVA DOS SANTOS                                           
 3481,LUCAS BRAGA RAMOS                                                     ,2006-10-15,VALDECI BRAGA DE SOUSA                                                
@@ -3692,6 +3693,7 @@ Cód.,Aluno,Nascimento,Mae
 11209,VINICIUS SILVA CAMILO,2009-06-18,ELIANE SILVA                                                          
 11210,VITOR BENTO CANTANHEDE PEREIRA,2009-04-29,DENISE BENTO CANTANHEDE PEREIRA                                       
 11211,ADRIENE VIANA DE GOUVEIA,2007-08-20,CLAUDIA VIANA DE GOUVEIA                                              
+11213,ANA BEATRIZ SILVA DA MATTA CICILIANO RODRIGUES,2007-10-23,DANIELLA SILVA DA MATTA CICILIANO                                     
 11214,DANIEL SILVA DE ASSIS,2007-08-04,GISELE SILVA                                                          
 11215,KAIQUE MARCOLINO DOS SANTOS FABRICIO,2007-03-07,ISABELA MARCOLINO DE SOUZA                                            
 11216,KAUA SEBASTIAO NASCIMENTO,2007-10-01,JESSIKA SEBASTIAO NASCIMENTO                                          
@@ -4153,6 +4155,7 @@ Cód.,Aluno,Nascimento,Mae
 11699,ARTHUR DA SILVA FONSECA,2008-10-29,PRISCILA DA SILVA FONSECA                                             
 11700,DAVI MARIANO GUSMAO,2009-04-15,ELIANA MARIA JOSE DE SOUZA GUSMAO                                     
 11701,EVELLY DE OLIVEIRA VIANA,2009-09-02,JANE SILVA DE OLIVEIRA                                                
+11702,GABRIEL SANTOS DO NASCIMENTO,2009-08-10,EDILANE ALVES DOS SANTOS                                              
 11703,DAVI NOGUEIRA MARQUES,2009-03-06,PRISCILA MARA CIPRIANO MOGUEIRA                                       
 11704,FABRICIO CONCEICAO PENA,2007-06-07,FABIANA SILVA PENA                                                    
 11705,IZABELLA DA SILVA VICTOR,2007-03-19,ELISIANE ARAUJO DA SILVA                                              
@@ -7636,6 +7639,7 @@ Cód.,Aluno,Nascimento,Mae
 22850,MIGUEL PAIVA ALVES,2010-03-06,MICHELLE PAIVA MACHADO LIMA
 22851,MOISES BARBOSA SAMPAIO,2010-06-24,VERONICA BARBOSA SAMPAIO
 22852,MONIQUE DOS SANTOS BARBOSA,2009-02-23,CATIA CRISTINA DOS SANTOS MARINS
+22854,RAYANE VIEIRA MARTINS,2006-12-24,VANESSA VIEIRA DA SILVA
 22855,RAYSSA SILVA FRANCA,2011-01-27,MARCIELLE DE OLIVEIRA SILVA
 22856,RENATA DA SILVA JARDIM,2006-07-18,ADRIANA DA SILVA CRUZ
 22857,RHUANNA FERREIRA ROSA,2007-04-17,JOICE FERREIRA DOS SANTOS ROSA
@@ -13572,3 +13576,12 @@ Cód.,Aluno,Nascimento,Mae
 28948,MARIA EDUARDA SANTANNA CORDOEIRA FERREIRA,2007-05-06,FERNANDA CRISTINA SANT ANNA CORDOEIRA                                 
 28949,MARIAH VITÓRIA DA CONCEIÇÃO BARBOSA,,QUEITIANE DA CONCEICAO PERES                                          
 28950,JEFERSON GABRIEL DA CRUZ JUNIOR,2011-03-18,CINTIA MENDONCA DA CONCEICAO                                          
+28951,GESSICA ALVES FERREIRA,2004-05-07,CARLA ANTONIA PEREIRA FERREIRA                                        
+28952,MARIA EDUARDA LOURENÇO DA CONCEIÇÃO,2012-08-29,FABIANA DA COSTA LOURENCO                                             
+28953,DAVI SILVA DE ANDRADE,2008-12-18,GEISA DA SILVA BARBOSA                                                
+28954,KARYNE MATIAS DA CONCEIÇÃO,2005-08-24,ANA PAULA MATIAS                                                      
+28955,ANA BEATRIZ JESUS DE OLIVEIRA,2011-08-07,JOCIVANIA JESUS DOS SANTOS                                            
+28956,ISABELLE CRISTINA CANDIDO SOARES,2005-07-24,PRISCILA CLOTILDE CANDIDO                                             
+28957,NICOLY DUARTE OLIVEIRA,2009-07-26,TATIANI PEREIRA DUARTE                                                
+28958,PEDRO HENRIQUE DA SILVA PEÇANHA,2006-09-24,DELIANE DA SILVA PECANHA                                              
+28959,ANNA JULIA BARBOSA OLIVEIRA,2012-05-14,SOIANI BARBOSA OLIVEIRA                                               
