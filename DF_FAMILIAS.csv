@@ -23,7 +23,6 @@ Cód.,Aluno,Nascimento,Mae
 25,JORGE FERNANDO DOS REIS PEREIRA                                       ,2004-05-11,PATRICIA VALERIA CORDEIRO DOS REIS                                    
 26,GABRIEL GUEDES FRANCISCA                                              ,2003-06-07,MIRIAM GUEDES FRANCISCA                                               
 27,BIANCA GUEDES FRANCISCA                                               ,2003-10-14,INES GUEDES FRANCISCA                                                 
-29,GUILHERME GONCALVES QUINTANILHA                                       ,2003-09-23,ELIZANGELA GONCALVES QUINTANILHA                                      
 30,LUIZ FELIPE BAPTISTA DE SOUZA                                         ,2003-03-05,CRISTIANE FLORENTINO BAPTISTA                                         
 31,ALICE FRANCISCA DA SILVA                                              ,2002-11-28,FABIANA DA SILVA                                                      
 32,JHONATA FERNANDES DA SILVA                                            ,2005-03-10,ANA PAULA LEAL FERNANDES                                              
@@ -130,7 +129,6 @@ Cód.,Aluno,Nascimento,Mae
 146,AMANDA COSTA DA SILVA                                                 ,2004-02-27,DANIELE COSTA SILVA                                                   
 147,ALAN MARQUES AGUIAR                                                   ,2005-03-23,NILZA AGUIAR DOS SANTOS                                               
 148,THAYANE GONCALVES ATANAZIO DA SILVA                                   ,2005-02-28,AILDES GONCALVES DA SILVA                                             
-149,PAMELA DA SILVA SOUZA SILVA                                           ,2002-06-17,LUCIMAR SANTANA DA SILVA                                              
 152,KAUAN OLIVEIRA RODY SARDOU                                            ,2004-01-08,LUANA DE OLIVEIRA FERNANDES                                           
 153,JOAO VICTOR SANTOS DO NASCIMENTO                                      ,2001-12-22,BRUNA KATARYNE SANTOS DA SILVA                                        
 154,CAMILA DA SILVA SENA                                                  ,2005-01-08,ROSILDA MARIA DA SILVA                                                
@@ -259,7 +257,6 @@ Cód.,Aluno,Nascimento,Mae
 1608,ENDRIELLY RODRIGUES SOUZA                                             ,2004-05-11,MAYSA ELIZEU RODRIGUES                                                
 1609,EMELLYN RODRIGUES SOUZA                                               ,2003-02-10,MAYSA ELIZEU RODRIGUES                                                
 1610,ALLAN RIBEIRO RANGEL CASTRO                                           ,2005-05-01,SIMONE RIBEIRO PESSANHA                                               
-1611,CAIQUE CUSTODIO DOS SANTOS                                            ,2004-04-13,SANDRA REGINA CUSTODIO                                                
 1612,EVELIN SILVA GONCALVES                                                ,2004-06-20,ADRIANA SILVA GONCALVES                                               
 1613,LARA VICENTE DA SILVA                                                 ,2003-01-11,SEBASTIANA MARA PEREIRA DA SILVA                                      
 1614,JOAO VICTOR ALVES SILVA                                               ,2004-07-30,SILVANA SILVA                                                         
@@ -285,7 +282,6 @@ Cód.,Aluno,Nascimento,Mae
 1635,LARYSSA CRISTINA SOUZA DOS SANTOS                                     ,2001-07-06,TANIA CRISTINA DOS SANTOS                                             
 1636,DAVI REI MANHAES PESSANHA DA CUNHA                                    ,2005-11-24,ANA VALERIA MANHAES PESSANHA                                          
 1638,RULYAN CARVALHO DOS SANTOS                                            ,2005-03-21,JANAILMA MONTEIRO DE CARVALHO COELHO                                  
-1639,MARIA EDUARDA JESUS DE NORONHA SIMOES                                 ,2005-11-22,ALESSANDRA JESUS DE NORONHA                                           
 1640,MIGUEL ANGELO DA SILVA BOM                                            ,2004-06-01,LUCIANE DA SILVA BOM                                                  
 1641,LORRANA DA SILVA MARINHO                                              ,2003-06-26,JENAINA DA SILVA DOS SANTOS                                           
 1642,ENZO DA ROCHA PEREIRA                                                 ,2003-05-31,JOELMA DA ROCHA VIANA                                                 
@@ -328,7 +324,6 @@ Cód.,Aluno,Nascimento,Mae
 1683,MEL CUNHA BARROS VENANCIO                                             ,2005-04-20,ELAINE CUNHA DA SILVA                                                 
 1684,ANDERSON LUAN DA SILVA AZEVEDO                                        ,2005-10-06,REGINA CELIA OZORIO DA SILVA AZEVEDO                                  
 1685,DAVI SOUZA DA CONCEICAO                                               ,2004-12-15,VERA LUCIA CONCEICAO DE SOUZA                                         
-1687,ERYK RENZO AZAMAR DOS SANTOS BERNARDES                                ,2006-01-06,JUANITA SILVA AZAMAR                                                  
 1688,TAINA COSTA DE MELO                                                   ,2005-11-21,IRICLELIA SILVA COSTA                                                 
 1689,THAIS PEREIRA MENDONCA                                                ,2005-07-17,NEZILDA PEREIRA PIO                                                   
 1691,NICOLE GOMES DE ANDRADE                                               ,2005-03-07,ANA PAULA GOMES DA SILVA                                              
@@ -373,7 +368,6 @@ Cód.,Aluno,Nascimento,Mae
 1739,EDUARDA CRISTINA SILVA DOS SANTOS                                     ,1998-04-16,BARBARA SILVA DE OLIVEIRA                                             
 1740,KAIO VITOR NEVES SILVA                                                ,2004-08-15,ANA PAULA DAS NEVES SILVA                                             
 1741,YASMIN JULIA ASSIS DA SILVA                                           ,2005-03-13,SIRLEIA SILVA DE ASSIS                                                
-1742,ISMAEL LIMA MEDEIROS FERNANDES                                        ,2005-04-22,ROSILENE LIMA MEDEIROS FERNANDO                                       
 1743,LUIZ HENRIQUE DE SOUSA LIMA                                           ,2004-07-12,PATRICIA DE SOUSA LIMA                                                
 1744,VANESSA CARDOSO SANTOS                                                ,2005-05-03,CLAUDIA ELMAR CARDOSO DE SOUZA                                        
 1745,STEFFANY DE PAULA PEREIRA COSTA                                       ,2006-01-31,CATIA DE PAULA PEREIRA                                                
@@ -391,7 +385,6 @@ Cód.,Aluno,Nascimento,Mae
 1757,DANDARO LOHAN SANTOS EVANGELISTA                                      ,2005-05-29,RENATA DANIELE SANTOS DA SILVA                                        
 1758,CRISLAINE JARDIM DOS SANTOS                                           ,2004-07-22,ALESSANDRA JARDIM DA SILVA                                            
 1759,PAMELA JARDIM DOS SANTOS                                              ,2006-01-29,ALESSANDRA JARDIM DA SILVA                                            
-1760,ANA LUIZA NOGUEIRA                                                    ,2004-07-27,ANA LUCIA NOGUEIRA                                                    
 1761,RHAYANNE AGATHA SOUZA ELCO                                            ,2004-06-09,NUBIA THAIS SILVA DE SOUZA                                            
 1762,KAUAN OLIVEIRA DE SOUSA                                               ,2005-04-25,BILIANE SILVA DE SOUSA                                                
 1763,JULIANA MIRANDA LIMA                                                  ,2005-01-05,MARIA DAS GRACAS MIRANDA                                              
@@ -414,7 +407,6 @@ Cód.,Aluno,Nascimento,Mae
 1784,ANA CAROLINA DE MORAES COELHO                                         ,2005-10-08,ERIKA MORAES MIRANDA                                                  
 1785,KAUA RODRIGUES ALVES DE PAULO                                         ,2006-02-15,LEIA PATRICIA LIMA RODRIGUES                                          
 1786,ALANA KETLYN AMARAL DA COSTA                                          ,2004-10-11,PRISCILA DO AMARAL                                                    
-1787,REBEKA SALLES MAIA                                                    ,2006-01-31,ALINE SALLES DA SILVA                                                 
 1788,LUANA ARAUJO DA SILVA                                                 ,2004-06-18,ALESSANDRA SILVA ARAUJO                                               
 1789,MARIA GRAZIELLE GOMES DOS SANTOS                                      ,2005-06-03,MARIA JOSE GOMES DA LUZ                                               
 1790,GABRIEL DE OLIVEIRA LIMA                                              ,2004-10-08,MARCIA DE OLIVEIRA                                                    
@@ -445,7 +437,6 @@ Cód.,Aluno,Nascimento,Mae
 1816,ALLAN NASCIMENTO NOGUEIRA                                             ,2005-08-17,CINTIA DO NASCIMENTO LEONARDO                                         
 1817,THUANNY VITORIA FERREIRA MONTEIRO                                     ,2003-03-13,NUBIA DE SOUZA FERREIRA MONTEIRO                                      
 1819,RAFAEL DA COSTA NETO                                                  ,2005-07-06,ELAINE DA COSTA SANTOS                                                
-1820,GABRIEL ARAUJO ROCHA                                                  ,2004-11-28,REGIANE ARAUJO DE ASSIS                                               
 1821,TAISSA ALMEIDA DA SILVA                                               ,2004-12-05,ELIZABETE DA SILVA FROES DE ABREU                                     
 1822,JAMILY DA COSTA                                                       ,2005-02-27,JACQUELINE DA COSTA GONCALVES                                         
 1823,GABRIEL RIBEIRO                                                       ,2005-03-28,MONIQUE FREITAS RIBEIRO                                               
@@ -489,13 +480,11 @@ Cód.,Aluno,Nascimento,Mae
 1865,VITOR LOPES DOS SANTOS                                                ,2005-09-18,ANDREIA SILVA LOPES DOS SANTOS                                        
 1866,CRISTIAN DUARTE SOARES DIAS                                           ,2005-01-17,ELIZABETH DUARTE DE MELLO                                             
 1868,CAIO SOUZA CORDEIRO                                                   ,2006-03-20,MARIANA DOS SANTOS SOUZA CORDEIRO                                     
-1869,EDUARDA DE JESUS RAMOS                                                ,2005-07-29,JULIA MARIA DE JESUS                                                  
 1870,HILANA PEREIRA SOUZA                                                  ,2004-05-15,KATIA PEREIRA                                                         
 1873,YGOR OLIVEIRA DA SILVA                                                ,2005-01-21,SABRINA DE OLIVEIRA                                                   
 1874,RUAN BARBOSA DA SILVA                                                 ,2003-04-20,VANDERLUCIA BARBOSA                                                   
 1875,WALLACE NASCIMENTO DA SILVA                                           ,2005-10-21,ELOIZA DE SOUZA NASCIMENTO                                            
 1876,ERIKA DE SOUZA ALVES                                                  ,2005-05-04,VALERIA DE SOUZA MARQUES                                              
-1877,JEAN CABRAL DA COSTA LUCENA                                           ,2003-06-24,SIMONE CABRAL DA SILVA                                                
 1879,FLAVIO GOMES DE SANTANA JUNIOR                                        ,2006-03-18,MARTA PIRES DA SILVA                                                  
 1880,ALEX MARCOLINO DA SILVA                                               ,2005-01-24,JULIANA MARCOLINO DA SILVA                                            
 1881,PEDRO HENRIQUE PEREIRA ALVES                                          ,2004-02-05,FABIA PEREIRA                                                         
@@ -4131,6 +4120,7 @@ Cód.,Aluno,Nascimento,Mae
 11690,DAVI LEONARDO GUIMARAES ARAUJO,2008-06-28,JULIANA DE ARAUJO SILVA                                               
 11691,FELIPE ALMEIDA PEDREIRA,2009-08-21,JUCELIA SANTOS ALMEIDA                                                
 11692,ISADORA HONORIO ALVES FORMIGONI,2010-02-21,EVELYN HONORIO DA SILVA                                               
+11693,KAREN MENDES DA SILVA,2009-05-01,JULIANA MENDES VIANA CORREA DA SILVA                                  
 11694,LUCAS HENRIQUE FELIX DA SILVA,2007-04-23,VIVIANE FELIX DA SILVA                                                
 11695,MANUELA VITORIA BATISTA CACIANO,2010-04-16,KAROLAYNE FERREIRA BATISTA                                            
 11696,MARIA VITORIA NUNES MACHADO,2009-05-05,DAYANA NUNES                                                          
@@ -4344,6 +4334,7 @@ Cód.,Aluno,Nascimento,Mae
 11918,DANIEL DOS SANTOS PIRES,2008-05-05,CATICILENE NUNES DOS SANTOS                                           
 11919,JOAO PEDRO DA CUNHA MOTTA,2007-07-25,LUCILENE DA CUNHA MOTTA                                               
 11920,JULIA PAZ MORAES ALMEIDA,2008-02-12,TAYANE PAZ MORAES ROSA                                                
+11921,LUCAS DE FREITAS,2009-02-21,FABIANA DE FREITAS                                                    
 11922,MARIA EDUARDA MACIEL XAVIER BARBOSA,2008-12-02,FABIANA MACIEL DOS SANTOS BARBOSA                                     
 11923,ANA PAULA DA SILVA BASTOS ,2006-09-03,PATRICIA SILVA BRUNO                                                  
 11924,DANILO JOSE DA SILVA SALVADOR ,2007-04-06,ADRIANA PEREIRA DA SILVA                                              
@@ -10264,6 +10255,7 @@ Cód.,Aluno,Nascimento,Mae
 25695,MILLENA SOARES DOS SANTOS,2010-12-27,JANAINA SOARES DOS SANTOS
 25696,NATHA CESARIO CARNEIRO,2005-09-04,MICHELLE CESÁRIO CARNEIRO
 25697,RAFAEL AUGUSTO SILVA COSTA,2008-01-23,RENATA DAMIANA SILVA COSTA
+25698,SOLOINA MARIA COSTA,2011-01-08,WALKIRIA APARECIDA COSTA
 25699,ALLANA DE ASSIS BORGES,2007-07-23,MÔNICA ALVES DE ASSIS
 25700,IAN RODRIGUES DA SILVA,2004-01-25,PRISCILA RODRIGUES FARIA
 25701,JOAO GABRIEL PEREIRA DOS REIS,2010-08-25,JULIANA PEREIRA DA SILVA
@@ -10348,6 +10340,7 @@ Cód.,Aluno,Nascimento,Mae
 25791,BRENO RIBEIRO BARROS,2011-11-06,ANDREIA RIBEIRO COUTINHO
 25792,DAVI DE JESUS SANTOS,2011-08-31,MICHELE DE JESUS SANTOS
 25793,EDUARDO DA SILVA CORREA,2010-01-24,TATIANA DA SILVA PERTININHA
+25795,BEATRIZ FREITAS LEITE SOUZA DOS SANTOS,2011-12-05,KARINE FREITAS LEITE GONÇALVES
 25796,THAMIRIS DOS SANTOS MOURA,2007-07-31,DANIELE MARTINS DOS SANTOS
 25797,ALLAN LUIZ DA CONCEICAO MARIA,2004-12-19,SANDRA REGINA DA CONCEIÇÃO
 25798,BRENO CARDOSO DOS SANTOS,2011-06-15,BEATRIZ JUSTINO CARDOSO DOS SANTOS
@@ -10913,6 +10906,7 @@ Cód.,Aluno,Nascimento,Mae
 26391,FERNANDA MUNIZ DOS SANTOS,2008-08-16,ROSANGELA LIMA DOS SSNTOS                                             
 26392,GABRIELLA JUSTINO JACINTHO,2008-06-13,DANIELE DA SILVA JUSTINO                                              
 26394,ISABELI BOMFIM DE SOUZA,2008-11-03,TATIANE BOMFIM DOS SANTOS                                             
+26398,CLARISSA LEAL SANTOS,2008-10-23,BARBARA LEAL BARROS QUINTANS                                          
 26404,CAIO JOSÉ PIRES FRANCISCO,2010-03-12,SCARLET PIRES MARTINS                                                 
 26405,JUAN LUCAS SANTOS DA SILVA,2009-03-03,MARCIA DE JESUS SANTOS                                                
 26406,LARIA DE VIRGILIO SOUZA,2009-09-02,PRISCILLA DE VIRGILIO LEMOS SOUZA                                     
@@ -12663,7 +12657,6 @@ Cód.,Aluno,Nascimento,Mae
 28191,PEDRO HENRIQUE DA SILVA MORENO,2008-08-13,VANESSA MARIA DA SILVA
 28192,STEFFANY RODRIGUES DA SILVA,2006-10-24,PATRICIA RODRIGUES DO NASCIMENTO
 28193,ANA VITORIA ROCHA DE SOUZA,2008-03-06,FABIANA DOS REIS ROCHA
-28194,BEATRIZ OLIVEIRA SODRE,1997-04-08,ANGELA DA SILVA OLIVEIRA
 28195,HYAN BADR PONTES MANDRANI,2008-05-23,CARLA PONTES VITURINO
 28196,JOÃO VITOR PINHO THEODORO,2006-12-08,MARCIA KARALINE DE PINHO
 28197,JULIA MANHÃES ESTEVÃO,2007-03-27,THATIANA MANHÃESFERREIRA
@@ -12949,7 +12942,6 @@ Cód.,Aluno,Nascimento,Mae
 28477,LUCAS MAXUEL DA SILVA MACIEL,2008-10-19,DESIREE PEREIRA DA SILVA
 28478,YASMIN NASCIMENTO,2008-03-24,TATIANE DA GLORIA NASCIMENTO
 28479,BERNARDO ARAUJO CUNHA,2010-12-19,CLAUDIANA DE OLIVEIRA ARAUJO DA CUNHA
-28480,LUISA MATHIAS FERREIRA JENDIROBA,2008-11-17,LISIEUX MATHIAS SOARES
 28481,BRENO ANDRADE SANTOS,2007-02-04,JULIANA DE ANDRADE LIMA LEANDRO
 28482,ESTHER CHRISTINA LEAL PEREIRA,2009-11-26,AMANDA CHRISTINA CASSIBE LEAL
 28483,KAIO LACERDA RODRIGUES,2009-09-13,PATRICIA LACERDA DE ALEXANDRE
@@ -12973,7 +12965,6 @@ Cód.,Aluno,Nascimento,Mae
 28501,MIGUEL ANGELO DA SILVA DE OLIVEIRA,2006-07-01,VANESSA OLIVEIRA DA SILVA
 28502,GUILHERME LUIS LEMOS COUTO,2006-10-25,AMERICA CRISTINA LEMOS DE CASTRO
 28503,THALYTA RIBEIRO MIGUEL,2006-10-21,MAYARA RIBEIRO MIGUEL
-28504,CAMILE DE OLIVEIRA,1999-05-06,ANGELA TEREZA DE OLIVEIRA
 28505,DANIEL LUCIANO DE SOUZA,2007-11-09,DILEIA LUCIANO DE SÁ
 28506,GUILHERME CERQUEIRA QUINTANILHA,2006-05-14,THIARA DOS SANTOS CERQUEIRA
 28507,KERLYN SILVA DA ROCHA,2008-12-10,ROSANGELA SILVA DA ROCHA
@@ -12995,7 +12986,6 @@ Cód.,Aluno,Nascimento,Mae
 28523,THIAGO WILLIAN DA SILVA MACHADO,2008-04-14,MÔNICA APARECIDA DA SILVA
 28524,ANA LUÍSA PASSERI DIAS,2009-03-27,LUCIENE BARBOSA PASSERI
 28525,GEOVANNA FULY RAMOS,2008-02-01,SUELEN FULY VAZ
-28526,LARA VERÍSSIMO DE PAULA,2006-06-06,SILVANIA VERÍSSIMO DE SOUZA
 28527,RAÍSSA BEZERRA DE FARIAS RODRIGUES,2008-11-28,ROSELI BEZERRA DE FARIAS
 28528,RENATA DE MELLO MENCARI,2009-05-03,KATIA MENCARI DE MELLO
 28529,ANDREY DA SILVA,2005-06-23,ADRIELLE DA SILVA
@@ -13007,9 +12997,7 @@ Cód.,Aluno,Nascimento,Mae
 28535,THAYSSA FELICIANO FERNANDES,2008-10-25,THAIS FELICIANO DOS SANTOS
 28536,CECILIA GONZAGA CAVALCANTE,2008-05-25,SOLANGE MARIA GONZAGA
 28537,MARCELLY SILVA AGUIAR,2007-12-01,MARIA EMILIA BARBOSA DA SILVA
-28538,MARIA EDUARDA ALMEIDA SILVA,2006-08-28,ÉRIKA FERNANDA FERREIRA DA SILVA
 28539,MATEUS FERREIRA DA COSTA,2006-11-27,CLAUDIA CRISTINA FERREIRA DA COSTA
-28540,RAISSA DE LIMA FERREIRA,2006-06-19,PATRÍCIA DE LIMA BEZERRA DA SILVA
 28541,RODRIGO SILVA RAMOS,2008-12-13,LUCIENE CARMO FONSECA DA SILVA
 28542,MARIA CLARA DIBBERN LINDGREN,2008-07-07,LUCIANA DE MELLO DIBBERN
 28543,PEDRO HENRIQUE BARCI PAZ,2009-03-13,CARLA REGINA BARCI DA SILVA
@@ -13209,7 +13197,6 @@ Cód.,Aluno,Nascimento,Mae
 28737,CARLOS EDUARDO ALVES DE OLIVEIRA,2004-12-08,MARIA VANDA LUCIA ALVES DA SILVA
 28738,KAUÃ PAULO SANTOS DA SILVA,2007-03-29,MONIQUE SANTOS DA SILVA SALDANHA
 28739,ANA CLARA DOS SANTOS ROSÁRIO,2006-12-03,ANA CRISTINA DOS SANTOS MOREIRA
-28740,KASSIANY VITÓRIA DE JESUS,2005-07-27,KASSIA RENATA DE JESUS
 28741,LUCAS PACHECO CAETANO DE MELO,2006-10-30,ANA PAULA SERQUEIRA DE MELO
 28742,FYLIPE GABRYEL OLIVEIRA CARVALHO,2008-01-17,SANDRA OLIVEIRA CARVALHO
 28743,GABRIEL MACHADO SOARES,2006-02-10,DISLAINE MACHADO DA CONCEIÇÃO SOARES
@@ -13280,7 +13267,6 @@ Cód.,Aluno,Nascimento,Mae
 28808,CARLOS HENRIQUE OLIVEIRA MACHADO,2007-12-08,JAQUELINE OLIVEIRA DA COSTA
 28809,DÉBORA FATIMA DA SILVA NETA,2007-04-19,TAIANA MESSIAS DA SILVA
 28810,GELILSSON DE ALBUQUERQUE DA SILVA,2006-08-29,CHARLENE DE ALBUQUERQUE SERAFIM
-28811,ANNA EDUARDA COSTA DA SILVA,2006-07-17,RENATA MIRANDA DA COSTA
 28812,JULYA MONTEIRO DE SOUZA DA SILVA,2008-02-08,AMANDA MONTEIRO DE SOUZA
 28813,DAVI CELESTINO DE SOUZA,2007-02-13,MARIA JOSE DE SOUZA SILVA
 28814,LARYSSA VIANA DA SILVA,2007-07-24,SUELLYN CRISTINA VIANA
@@ -13289,7 +13275,6 @@ Cód.,Aluno,Nascimento,Mae
 28817,THALITA JORGE SANTOS,2008-02-05,VILMA JORGE SANTOS
 28818,GABRIEL FRANCO DOS SANTOS,2006-02-27,BRUNNA FRANCO DE JESUS
 28819,LUANA DA SILVA ROSA FONSECA,2007-06-19,VIVIANA DA SILVA
-28820,THALYS ALVES OLIVEIRA,2006-09-27,REGINALDA ALVES QUEIROZ
 28821,EVILA MONIK DE LIMA ALMEIDA,2008-04-22,ANA PAULA DE LIMA ROSENO
 28822,MANOELA RANGEL MAGALHÃES PINTO,2009-05-24,FABIANA RANGEL MAGALHÃES
 28823,NOEMI CARVALHO NUNES,2009-03-18,BARBARA SILVA CARVALHO
@@ -13373,7 +13358,6 @@ Cód.,Aluno,Nascimento,Mae
 28901,ANA KAROLINE SANTOS REIS,2004-06-06,JERLHA SANTOS REIS
 28902,JOÃO VICTOR BELLAS RUBERT RIBEIRO,2006-07-16,CLAUDIA RUBERT RIBEIRO
 28903,RAFAEL ANDRADE SOUSA,2004-12-09,LUCIA HELENA DE ANDRADE SANTOS
-28904,SAMUEL CANDIDO DE OLIVEIRA DA LUZ,2004-02-25,INILZETE CANDIDO DE OLIVEIRA
 28905,ANNA CLARA GOMES DA SILVA,2013-02-15,JULIANA ARAUJO DA SILVA
 28906,GUILHERME PORTUGAL OLIVEIRA,2012-04-10,VANESSA PORTUGAL BRAZ DA SILVA
 28907,JAMILLY ADRIANA DOS SANTOS GOMES,2012-05-03,IVANILDA DE OLIVEIRA SANTOS
@@ -13460,3 +13444,7 @@ Cód.,Aluno,Nascimento,Mae
 28988,PEDRO DA SILVA DE OLIVEIRA,2010-10-05,DAIANE QUEIROZ DA SILVA                                               
 28989,GIOVANNA LOURENCO DE MOURA,2010-11-01,CHAYENE OHANA DOS SANTOS LOURENCO                                     
 28991,GUILHERME PEREIRA RODRIGUES ALVES,2012-10-02,ROZINEIDE PEREIRA ALVES                                               
+28992,ANA VICTORIA MARINHO DE ALMEIDA,2012-01-14,VIVIANE MARINHO DA SILVA                                              
+28993,RAYSSA DA SILVA MOTA,2007-06-14,PALOMA DA SILVA                                                       
+28994,ANNA LUIZA CONCEIÇÃO DA SILVA,2013-03-29,ANDREIA CONCEICAO DA SILVA                                            
+28995,ANA CLARA VIEIRA NUNES,2006-09-20,MARLENE ROSA VIEIRA                                                   
