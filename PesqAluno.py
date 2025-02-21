@@ -15,11 +15,11 @@ def load_data():
     df_dadosbasicos = pd.read_csv('DF_DADOSBASICOS.csv')
     df_resultados = pd.read_csv('DF_RESULTADOS.csv')
     df_beneficios = pd.read_csv('DF_BENEFICIOS.csv')
-    df_contas =  pd.read_csv('DF_CONTAS.csv')
+    #df_contas =  pd.read_csv('DF_CONTAS.csv')
     
-    return df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios, df_contas
+    return df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios
 
-df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios, df_contas = load_data()
+df_alunos, df_familias, df_dadosbasicos, df_resultados, df_beneficios = load_data()
 
 # Sidebar
 st.sidebar.title("Pesquisar Aluno")
@@ -40,7 +40,7 @@ if aluno_filtro:
     df_familias = df_familias[df_familias["Aluno"].str.contains(aluno_filtro, case=False)]
 
 #Abas
-tab1,tab2,tab3,tab4,tab5 = st.tabs(["Pesquisa","Dados Pessoais","Resultados","Benefícios","Conta Poupança" ])
+tab1,tab2,tab3,tab4 = st.tabs(["Pesquisa","Dados Pessoais","Resultados","Benefícios" ])
 
 with tab1:
     # Aba "Pesquisa"
@@ -133,37 +133,4 @@ with tab4:
         st.header("Aluno não encontrado")
 
 # Aba "Conta Poupança"
-with tab5:
-    # Realizar as instruções a seguir apenas se idt_elegivel existir em df_dadosbasicos
-    if idt_elegivel in df_contas["cod_aluno"].to_list():
-        dados_pessoais = df_dadosbasicos[df_dadosbasicos["Cód."] == idt_elegivel].iloc[0]
 
-        st.header(f"{idt_elegivel} - {dados_pessoais['Aluno']}")
-
-        # Localizar e apresentar os valores de cod_conta, dat_open, num_cpf, Banco, Agência e conta
-        conta_info = df_contas[df_contas["cod_aluno"] == idt_elegivel]
-
-        if not conta_info.empty:
-            cod_conta = conta_info["cod_conta"].values[0]
-            dat_open = conta_info["dat_open"].values[0]#.strftime("%d/%m/%Y")
-            num_cpf = conta_info["num_cpf"].values[0]
-            banco = conta_info["Banco"].values[0]
-            agencia = conta_info["Agencia"].values[0]
-            conta = conta_info["Conta"].values[0]
-
-            st.subheader("Informações da Conta")
-            st.write(f"**Código da Conta:** {cod_conta}")
-            
-            if pd.isna(dat_open):
-                st.write("Data de abertura: Não informada")
-            else:
-                st.write(f"**Data de Abertura:** {dat_open}")
-                       
-            st.write(f"**CPF:** {num_cpf}")#{num_cpf[:2]}.{num_cpf[3:5]}.{num_cpf[6:8]}-{num_cpf[9:]}")
-            st.write(f"**Banco:** {banco}")
-            st.write(f"**Agência:** {agencia}")
-            st.write(f"**Conta:** {conta}")
-        else:
-            st.write("Nenhuma conta encontrada para o aluno.")
-    else:
-        st.write("Aluno não possui conta-poupança registrada.")
